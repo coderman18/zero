@@ -1,0 +1,30 @@
+/* .App {
+  text-align: center;
+} */
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+.App {
+    max-width: 1130px;
+    padding: 35px;
+    margin: 0 auto;
+    background-color: paleturquoise;
+}
+
+hr {
+    color: darkblue;
+    box-shadow: inset #000;
+}

@@ -1,0 +1,33 @@
+.formTitle {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.formName {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.control {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+.labelName {
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+.feedLabel {
+  margin-bottom: 10px;
+}
+
+.formBtn {
+  margin-left: 10px;
+}
