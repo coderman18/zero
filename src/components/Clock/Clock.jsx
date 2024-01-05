@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react';
 import styles from './Clock.module.css'
 
 export default function Clock() {
   let [date, setDate] = useState(new Date())
-    setInterval(()=> setDate(new Date()), 1000)
+
+  useEffect(() => {
+    const interval = setInterval(()=> setDate(new Date()), 1000)
+
+    return () => {
+      clearInterval(interval)
+    }
+  }, [])
+    
     
   return (
     <div className={styles.clock}>

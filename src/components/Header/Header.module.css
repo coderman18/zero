@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: darkcyan;
+  background-color: rgb(84, 89, 128);
   align-items: center;
   padding: 0 20px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 8px #242323;
 }

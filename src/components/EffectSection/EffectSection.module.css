@@ -1,0 +1,13 @@
+.container {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgb(87, 106, 126);
+  box-shadow: 10px 10px 8px #242323;
+}
+
+h3 {
+  text-align: center;
+}
+

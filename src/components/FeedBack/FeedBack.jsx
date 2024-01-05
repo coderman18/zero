@@ -1,7 +1,30 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import styles from './Feedback.module.css'
 import Button from '../Button/Button'
+
+function StateVsRef() {
+  const input = useRef()
+  const [show, setShow] = useState(false)
+
+  function handleKeyDown(e) {
+    if (e.key === 'Enter') {
+      setShow(true)
+    }
+  }
+
+  return (
+    <div>
+      <h3>Input Value: {show && input.current.value}</h3>
+      <input 
+        className={styles.control} 
+        type='text'
+        ref={input} 
+        onKeyDown={handleKeyDown}
+      />
+    </div>
+  )
+}
 
 export default function FeedBack() {
   const [form, setForm] = useState({
@@ -61,6 +84,8 @@ export default function FeedBack() {
           <option value='suggest'>Предложение</option>
         </select> 
       </form>
+
+      <StateVsRef />
 
       <Button 
         disabled={form.hasError}
